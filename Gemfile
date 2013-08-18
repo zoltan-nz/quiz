@@ -71,4 +71,8 @@ group :development do
   gem 'pry-rails'
   gem 'pry-stack_explorer'
   gem 'pry-debugger'
+
+  #livereload
+  gem 'guard-livereload'
+  gem 'rack-livereload'
 end
