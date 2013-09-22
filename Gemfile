@@ -7,11 +7,16 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 gem 'jbuilder'
 gem 'bcrypt-ruby'
 
 gem 'slim'
 gem 'puma'
+
+gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+
+gem 'simple_form'
 
 group :development do
   gem 'better_errors'
@@ -31,14 +36,14 @@ group :development do
 
   #pry package
   gem 'pry'
-  gem 'pry-remote'
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'pry-stack_explorer'
-  gem 'pry-debugger'
   gem 'pry-nav'
 
   #livereload
+  gem 'guard'
+  gem 'guard-zeus'
   gem 'guard-livereload'
   gem 'rack-livereload'
 end

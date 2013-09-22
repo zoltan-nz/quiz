@@ -1,4 +1,4 @@
-FirstApp::Application.configure do
+CompetitionWebsite::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.

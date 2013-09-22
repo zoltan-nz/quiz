@@ -1,11 +1,11 @@
-!!!
-%html
-  %head
-    %title FirstApp
+doctype html
+html
+  head
+    title CompetitionWebsite
     =stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     =javascript_include_tag "application", "data-turbolinks-track" => true
     =csrf_meta_tags
-  %body
+  body
     .container
       =render 'layouts/navigation'
       =yield
