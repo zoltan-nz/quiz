@@ -18,6 +18,9 @@ gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
 gem 'simple_form'
 
+gem 'devise', '3.0.0.rc'
+gem 'activeadmin', github: 'gregbell/active_admin', branch: 'rails4'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
