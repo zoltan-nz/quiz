@@ -9,6 +9,3 @@ Todo:
 - Launch a voting phase where visitors can vote
 - Show applications randomly on main page to give them same chance to win
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/szines/competition_website/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
