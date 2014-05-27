@@ -1,32 +1,49 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.0.0'
-gem 'sqlite3'
+ruby '2.1.2'
+
+gem 'rails', '~> 4.1.1'
+
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jquery-turbolinks'
-gem 'jbuilder'
-gem 'bcrypt-ruby'
 
-gem 'slim'
+gem 'jquery-rails'
+
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+
+gem 'faker'
+
+gem 'bcrypt'
+
 gem 'puma'
 
-gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+gem 'devise', github: 'plataformatec/devise'
+gem 'cancancan'
 
-gem 'simple_form'
+gem 'ember-rails'
+gem 'ember-source'
 
-gem 'devise', '3.0.0.rc'
-gem 'activeadmin', github: 'gregbell/active_admin', branch: 'rails4'
+gem 'rabl'
+gem 'oj'
+
+gem 'mongoid', github: 'mongoid/mongoid'
+
+gem 'mongoid-paperclip'
+gem 'mongoid-history'
+
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+
+gem 'will_paginate'
+gem 'will_paginate_mongoid'
 
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'annotate'
   gem 'bullet'
-  gem 'debugger'
   gem 'flay'
   gem 'hirb'
   gem 'lol_dba'
@@ -34,19 +51,25 @@ group :development do
 
   gem 'quiet_assets'
   gem 'rack-mini-profiler'
-  gem 'rails-footnotes'
   gem 'rails_best_practices'
 
   #pry package
   gem 'pry'
+  gem 'pry-remote'
   gem 'pry-doc'
   gem 'pry-rails'
   gem 'pry-stack_explorer'
   gem 'pry-nav'
+  gem 'rb-readline', require: false
 
   #livereload
   gem 'guard'
   gem 'guard-zeus'
   gem 'guard-livereload'
   gem 'rack-livereload'
+
+
+  gem 'rb-fsevent', require: false
+  gem 'zeus'
+  gem 'spring'
 end

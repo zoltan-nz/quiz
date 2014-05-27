@@ -1,0 +1,13 @@
+development:
+  sessions:
+    default:
+      database: competition-development
+      hosts:
+        - localhost:27017
+
+production:
+  sessions:
+    default:
+      database: competition-production
+      hosts:
+        - localhost:27017

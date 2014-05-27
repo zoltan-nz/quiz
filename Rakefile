@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-CompetitionWebsite::Application.load_tasks
+CompetitionApp::Application.load_tasks
