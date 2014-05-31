@@ -24,6 +24,7 @@ gem 'cancancan'
 
 gem 'ember-rails'
 gem 'ember-source'
+gem 'es6_module_transpiler-rails'
 
 gem 'rabl'
 gem 'oj'
