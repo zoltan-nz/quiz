@@ -8,3 +8,14 @@
 //require_tree ./routes
 //require ./router
 //require_self
+
+window.CompetitionApp = Ember.Application.create({
+  LOG_TRANSITIONS_INTERNAL: true,
+  LOG_ACTIVE_GENERATION: true,
+  LOG_VIEW_LOOKUPS: true,
+  LOG_BINDINGS: true
+});
+
+Ember.run.backburner.DEBUG = true;
+Ember.ENV.RAISE_ON_DEPRECATION = true;
+Ember.LOG_STACKTRACE_ON_DEPRECATION = true;
