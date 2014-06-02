@@ -1,0 +1,20 @@
+{
+  "name": "competition_website",
+  "version": "0.0.0",
+  "homepage": "https://github.com/szines/competition_website",
+  "authors": [
+    "Zoltan <zdebre@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember-devise-simple-auth": ""
+  }
+}

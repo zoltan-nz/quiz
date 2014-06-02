@@ -30,5 +30,7 @@ module CompetitionApp
 
     Mongoid.logger.level = Logger::DEBUG
     Moped.logger.level = Logger::DEBUG
+
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
   end
 end
