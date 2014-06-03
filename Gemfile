@@ -22,6 +22,8 @@ gem 'puma'
 gem 'devise', github: 'plataformatec/devise'
 gem 'cancancan'
 
+gem 'ember_devise_simple_auth'
+
 gem 'ember-rails'
 gem 'ember-source'
 gem 'es6_module_transpiler-rails'
