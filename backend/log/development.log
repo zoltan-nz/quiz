@@ -1,0 +1,458 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-27 22:59:04 +1200
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+ActionView::MissingTemplate - Missing template home/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :rabl]}. Searched in:
+  * "/Users/szines/projects/competition_website/app/views"
+  * "/Users/szines/.rvm/gems/ruby-2.1.2/bundler/gems/devise-395b5c423739/app/views"
+:
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/szines/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  rack-mini-profiler (0.9.1) lib/mini_profiler/profiling_methods.rb:108:in `block in profile_method'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  meta_request (0.3.0) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+  meta_request (0.3.0) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  bullet (4.9.0) lib/bullet/rack.rb:10:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.1) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.8.2) lib/puma/server.rb:490:in `handle_request'
+  puma (2.8.2) lib/puma/server.rb:361:in `process_client'
+  puma (2.8.2) lib/puma/server.rb:254:in `block in run'
+  puma (2.8.2) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+
+Started POST "/__better_errors/2175805440/variables" for 127.0.0.1 at 2014-05-27 22:59:04 +1200
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-27 23:03:12 +1200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 1825ms
+
+Sprockets::FileNotFound - couldn't find file 'bootstrap.min'
+  (in /Users/szines/projects/competition_website/app/assets/javascripts/application.js:15):
+  sprockets (2.11.0) lib/sprockets/context.rb:106:in `resolve'
+  sprockets (2.11.0) lib/sprockets/context.rb:146:in `require_asset'
+  sprockets (2.11.0) lib/sprockets/directive_processor.rb:217:in `process_require_directive'
+  sprockets (2.11.0) lib/sprockets/directive_processor.rb:167:in `block in process_directives'
+  sprockets (2.11.0) lib/sprockets/directive_processor.rb:165:in `process_directives'
+  sprockets (2.11.0) lib/sprockets/directive_processor.rb:99:in `evaluate'
+  tilt (1.4.1) lib/tilt/template.rb:103:in `render'
+  sprockets (2.11.0) lib/sprockets/context.rb:197:in `block in evaluate'
+  sprockets (2.11.0) lib/sprockets/context.rb:194:in `evaluate'
+  sprockets (2.11.0) lib/sprockets/processed_asset.rb:12:in `initialize'
+  sprockets (2.11.0) lib/sprockets/base.rb:374:in `block in build_asset'
+  sprockets (2.11.0) lib/sprockets/base.rb:395:in `circular_call_protection'
+  sprockets (2.11.0) lib/sprockets/base.rb:373:in `build_asset'
+  sprockets (2.11.0) lib/sprockets/index.rb:94:in `block in build_asset'
+  sprockets (2.11.0) lib/sprockets/caching.rb:58:in `cache_asset'
+  sprockets (2.11.0) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.0) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.0) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.0) lib/sprockets/bundled_asset.rb:16:in `initialize'
+  sprockets (2.11.0) lib/sprockets/base.rb:377:in `build_asset'
+  sprockets (2.11.0) lib/sprockets/index.rb:94:in `block in build_asset'
+  sprockets (2.11.0) lib/sprockets/caching.rb:58:in `cache_asset'
+  sprockets (2.11.0) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.11.0) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.11.0) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.11.0) lib/sprockets/environment.rb:75:in `find_asset'
+  sprockets (2.11.0) lib/sprockets/base.rb:295:in `[]'
+  sprockets-rails (2.1.3) lib/sprockets/rails/helper.rb:214:in `lookup_asset_for_path'
+  sprockets-rails (2.1.3) lib/sprockets/rails/helper.rb:182:in `check_errors_for'
+  sprockets-rails (2.1.3) lib/sprockets/rails/helper.rb:134:in `block in javascript_include_tag'
+  sprockets-rails (2.1.3) lib/sprockets/rails/helper.rb:133:in `javascript_include_tag'
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___696618242888474107_2239881540'
+  actionview (4.1.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.1) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.1) lib/action_view/template.rb:143:in `render'
+  rack-mini-profiler (0.9.1) lib/mini_profiler/profiling_methods.rb:108:in `block in profile_method'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:67:in `render_with_layout'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/szines/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  rack-mini-profiler (0.9.1) lib/mini_profiler/profiling_methods.rb:108:in `block in profile_method'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  meta_request (0.3.0) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.0) lib/meta_request/middlewares/headers.rb:16:in `call'
+  meta_request (0.3.0) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  bullet (4.9.0) lib/bullet/rack.rb:10:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.1) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.8.2) lib/puma/server.rb:490:in `handle_request'
+  puma (2.8.2) lib/puma/server.rb:361:in `process_client'
+  puma (2.8.2) lib/puma/server.rb:254:in `block in run'
+  puma (2.8.2) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+
+Started POST "/__better_errors/2272212420/variables" for 127.0.0.1 at 2014-05-27 23:03:14 +1200
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-27 23:04:13 +1200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1012ms (Views: 1011.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-27 23:04:24 +1200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-27 23:04:27 +1200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 8.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-27 23:07:19 +1200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 7.0ms)
+[0;37mDEBUG[0;37m2014-05-27 23:09:13.817[0m    (pid:58355)
+[0;37mDEBUG[0;37m2014-05-27 23:09:13.817[0m    (pid:58355)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-05-27 23:09:13.818[0m   Started GET "/" for 127.0.0.1 at 2014-05-27 23:09:13 +1200 (pid:58355)
+[32mINFO [0;37m2014-05-27 23:09:13.831[0m   Processing by HomeController#index as HTML (pid:58355)
+[32mINFO [0;37m2014-05-27 23:09:13.868[0m   Rendered home/index.html.erb within layouts/application (29.1ms) (pid:58355)
+[32mINFO [0;37m2014-05-27 23:09:13.943[0m   Completed 200 OK in 111ms (Views: 110.7ms) (pid:58355)
+[0;37mDEBUG[0;37m2014-05-30 23:53:24.972[0m    (pid:27313)
+[0;37mDEBUG[0;37m2014-05-30 23:53:24.978[0m    (pid:27313)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-05-30 23:53:24.982[0m   Started GET "/" for 127.0.0.1 at 2014-05-30 23:53:24 +1200 (pid:27313)
+[32mINFO [0;37m2014-05-30 23:53:24.113[0m   Processing by HomeController#index as HTML (pid:27313)
+[32mINFO [0;37m2014-05-30 23:53:24.125[0m   Rendered home/index.html.erb within layouts/application (2.1ms) (pid:27313)
+[32mINFO [0;37m2014-05-30 23:53:24.217[0m   Completed 200 OK in 103ms (Views: 102.4ms) (pid:27313)
+[0;37mDEBUG[0;37m2014-05-30 23:55:23.619[0m    (pid:27313)
+[0;37mDEBUG[0;37m2014-05-30 23:55:23.620[0m    (pid:27313)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-05-30 23:55:23.620[0m   Started GET "/" for 127.0.0.1 at 2014-05-30 23:55:23 +1200 (pid:27313)
+[32mINFO [0;37m2014-05-30 23:55:23.625[0m   Processing by HomeController#index as HTML (pid:27313)
+[32mINFO [0;37m2014-05-30 23:55:23.629[0m   Rendered home/index.html.erb within layouts/application (0.2ms) (pid:27313)
+[32mINFO [0;37m2014-05-30 23:55:23.650[0m   Completed 200 OK in 24ms (Views: 23.6ms) (pid:27313)
+[0;37mDEBUG[0;37m2014-05-30 23:57:05.247[0m    (pid:27313)
+[0;37mDEBUG[0;37m2014-05-30 23:57:05.251[0m    (pid:27313)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-05-30 23:57:05.258[0m   Started GET "/" for 127.0.0.1 at 2014-05-30 23:57:05 +1200 (pid:27313)
+[32mINFO [0;37m2014-05-30 23:57:05.287[0m   Processing by HomeController#index as HTML (pid:27313)
+[32mINFO [0;37m2014-05-30 23:57:05.319[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:27313)
+[32mINFO [0;37m2014-05-30 23:57:05.355[0m   Completed 200 OK in 6ms (Views: 5.8ms) (pid:27313)
+[0;37mDEBUG[0;37m2014-05-31 00:42:24.800[0m    (pid:27313)
+[0;37mDEBUG[0;37m2014-05-31 00:42:24.808[0m    (pid:27313)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-05-31 00:42:24.809[0m   Started GET "/" for 127.0.0.1 at 2014-05-31 00:42:24 +1200 (pid:27313)
+[32mINFO [0;37m2014-05-31 00:42:24.812[0m   Processing by HomeController#index as HTML (pid:27313)
+[32mINFO [0;37m2014-05-31 00:42:24.815[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:27313)
+[32mINFO [0;37m2014-05-31 00:42:24.820[0m   Completed 200 OK in 7ms (Views: 6.4ms) (pid:27313)
+[0;37mDEBUG[0;37m2014-06-01 00:32:37.665[0m    (pid:3433)
+[0;37mDEBUG[0;37m2014-06-01 00:32:37.666[0m    (pid:3433)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-01 00:32:37.667[0m   Started GET "/" for 127.0.0.1 at 2014-06-01 00:32:37 +1200 (pid:3433)
+[32mINFO [0;37m2014-06-01 00:32:37.681[0m   Processing by HomeController#index as HTML (pid:3433)
+[32mINFO [0;37m2014-06-01 00:32:37.751[0m   Rendered home/index.html.erb within layouts/application (2.0ms) (pid:3433)
+[32mINFO [0;37m2014-06-01 00:32:37.786[0m   Completed 200 OK in 105ms (Views: 104.3ms) (pid:3433)
+[0;37mDEBUG[0;37m2014-06-01 00:37:40.966[0m    (pid:3433)
+[0;37mDEBUG[0;37m2014-06-01 00:37:40.976[0m    (pid:3433)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-01 00:37:40.985[0m   Started GET "/" for 127.0.0.1 at 2014-06-01 00:37:40 +1200 (pid:3433)
+[32mINFO [0;37m2014-06-01 00:37:40.102[0m   Processing by HomeController#index as HTML (pid:3433)
+[32mINFO [0;37m2014-06-01 00:37:40.105[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:3433)
+[32mINFO [0;37m2014-06-01 00:37:40.110[0m   Completed 200 OK in 6ms (Views: 5.9ms) (pid:3433)
+[0;37mDEBUG[0;37m2014-06-01 00:37:48.242[0m    (pid:3433)
+[0;37mDEBUG[0;37m2014-06-01 00:37:48.243[0m    (pid:3433)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-01 00:37:48.243[0m   Started GET "/" for 127.0.0.1 at 2014-06-01 00:37:48 +1200 (pid:3433)
+[32mINFO [0;37m2014-06-01 00:37:48.247[0m   Processing by HomeController#index as HTML (pid:3433)
+[32mINFO [0;37m2014-06-01 00:37:48.250[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:3433)
+[32mINFO [0;37m2014-06-01 00:37:48.253[0m   Completed 200 OK in 5ms (Views: 5.3ms) (pid:3433)
+[0;37mDEBUG[0;37m2014-06-01 00:40:32.884[0m    (pid:3433)
+[0;37mDEBUG[0;37m2014-06-01 00:40:32.884[0m    (pid:3433)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-01 00:40:32.885[0m   Started GET "/" for 127.0.0.1 at 2014-06-01 00:40:32 +1200 (pid:3433)
+[32mINFO [0;37m2014-06-01 00:40:32.889[0m   Processing by HomeController#index as HTML (pid:3433)
+[32mINFO [0;37m2014-06-01 00:40:32.891[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:3433)
+[32mINFO [0;37m2014-06-01 00:40:32.913[0m   Completed 200 OK in 24ms (Views: 23.6ms) (pid:3433)
+[0;37mDEBUG[0;37m2014-06-01 00:40:40.372[0m    (pid:3433)
+[0;37mDEBUG[0;37m2014-06-01 00:40:40.373[0m    (pid:3433)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-01 00:40:40.373[0m   Started GET "/" for 127.0.0.1 at 2014-06-01 00:40:40 +1200 (pid:3433)
+[32mINFO [0;37m2014-06-01 00:40:40.376[0m   Processing by HomeController#index as HTML (pid:3433)
+[32mINFO [0;37m2014-06-01 00:40:40.379[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:3433)
+[32mINFO [0;37m2014-06-01 00:40:40.382[0m   Completed 200 OK in 5ms (Views: 4.9ms) (pid:3433)
+[0;37mDEBUG[0;37m2014-06-01 00:42:56.878[0m    (pid:4028)
+[0;37mDEBUG[0;37m2014-06-01 00:42:56.878[0m    (pid:4028)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-01 00:42:56.878[0m   Started GET "/" for 127.0.0.1 at 2014-06-01 00:42:56 +1200 (pid:4028)
+[32mINFO [0;37m2014-06-01 00:42:56.891[0m   Processing by HomeController#index as HTML (pid:4028)
+[32mINFO [0;37m2014-06-01 00:42:56.901[0m   Rendered home/index.html.erb within layouts/application (1.9ms) (pid:4028)
+[32mINFO [0;37m2014-06-01 00:42:58.566[0m   Completed 200 OK in 1674ms (Views: 1673.8ms) (pid:4028)
+[0;37mDEBUG[0;37m2014-06-05 09:04:37.335[0m    (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:04:37.395[0m    (pid:13454)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-05 09:04:37.448[0m   Started GET "/" for 127.0.0.1 at 2014-06-05 09:04:37 +1200 (pid:13454)
+[32mINFO [0;37m2014-06-05 09:04:37.183[0m   Processing by HomeController#index as HTML (pid:13454)
+[32mINFO [0;37m2014-06-05 09:04:37.301[0m   Rendered home/index.html.erb within layouts/application (2.0ms) (pid:13454)
+[32mINFO [0;37m2014-06-05 09:04:37.125[0m   Completed 200 OK in 106ms (Views: 105.9ms) (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:05:02.366[0m    (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:05:02.366[0m    (pid:13454)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-05 09:05:02.367[0m   Started GET "/" for 127.0.0.1 at 2014-06-05 09:05:02 +1200 (pid:13454)
+[32mINFO [0;37m2014-06-05 09:05:02.371[0m   Processing by HomeController#index as HTML (pid:13454)
+[32mINFO [0;37m2014-06-05 09:05:02.375[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:13454)
+[32mINFO [0;37m2014-06-05 09:05:02.379[0m   Completed 200 OK in 6ms (Views: 5.9ms) (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:09:58.133[0m    (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:09:58.134[0m    (pid:13454)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-05 09:09:58.134[0m   Started GET "/" for 127.0.0.1 at 2014-06-05 09:09:58 +1200 (pid:13454)
+[32mINFO [0;37m2014-06-05 09:09:58.140[0m   Processing by HomeController#index as HTML (pid:13454)
+[32mINFO [0;37m2014-06-05 09:09:58.146[0m   Rendered home/index.html.erb within layouts/application (0.9ms) (pid:13454)
+[32mINFO [0;37m2014-06-05 09:09:58.151[0m   Completed 200 OK in 10ms (Views: 10.2ms) (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:10:02.340[0m    (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:10:02.341[0m    (pid:13454)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-05 09:10:02.341[0m   Started GET "/" for 127.0.0.1 at 2014-06-05 09:10:02 +1200 (pid:13454)
+[32mINFO [0;37m2014-06-05 09:10:02.344[0m   Processing by HomeController#index as HTML (pid:13454)
+[32mINFO [0;37m2014-06-05 09:10:02.346[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:13454)
+[32mINFO [0;37m2014-06-05 09:10:02.350[0m   Completed 200 OK in 6ms (Views: 5.6ms) (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:10:06.596[0m    (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:10:06.597[0m    (pid:13454)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-05 09:10:06.597[0m   Started GET "/" for 127.0.0.1 at 2014-06-05 09:10:06 +1200 (pid:13454)
+[32mINFO [0;37m2014-06-05 09:10:06.601[0m   Processing by HomeController#index as HTML (pid:13454)
+[32mINFO [0;37m2014-06-05 09:10:06.605[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:13454)
+[32mINFO [0;37m2014-06-05 09:10:06.608[0m   Completed 200 OK in 7ms (Views: 6.5ms) (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:10:14.982[0m    (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:10:14.982[0m    (pid:13454)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-05 09:10:14.983[0m   Started GET "/" for 127.0.0.1 at 2014-06-05 09:10:14 +1200 (pid:13454)
+[32mINFO [0;37m2014-06-05 09:10:14.986[0m   Processing by HomeController#index as HTML (pid:13454)
+[32mINFO [0;37m2014-06-05 09:10:14.989[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:13454)
+[32mINFO [0;37m2014-06-05 09:10:14.992[0m   Completed 200 OK in 6ms (Views: 5.3ms) (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:16:37.822[0m    (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:16:37.822[0m    (pid:13454)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-05 09:16:37.823[0m   Started GET "/" for 127.0.0.1 at 2014-06-05 09:16:37 +1200 (pid:13454)
+[32mINFO [0;37m2014-06-05 09:16:37.827[0m   Processing by HomeController#index as HTML (pid:13454)
+[32mINFO [0;37m2014-06-05 09:16:37.833[0m   Rendered home/index.html.erb within layouts/application (0.5ms) (pid:13454)
+[32mINFO [0;37m2014-06-05 09:16:38.157[0m   Completed 200 OK in 328ms (Views: 328.2ms) (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:19:03.547[0m    (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:19:03.548[0m    (pid:13454)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-05 09:19:03.548[0m   Started GET "/" for 127.0.0.1 at 2014-06-05 09:19:03 +1200 (pid:13454)
+[32mINFO [0;37m2014-06-05 09:19:03.553[0m   Processing by HomeController#index as HTML (pid:13454)
+[32mINFO [0;37m2014-06-05 09:19:03.556[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:13454)
+[32mINFO [0;37m2014-06-05 09:19:03.795[0m   Completed 200 OK in 242ms (Views: 241.8ms) (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:25:57.846[0m    (pid:13454)
+[0;37mDEBUG[0;37m2014-06-05 09:25:57.847[0m    (pid:13454)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-05 09:25:57.848[0m   Started GET "/" for 127.0.0.1 at 2014-06-05 09:25:57 +1200 (pid:13454)
+[32mINFO [0;37m2014-06-05 09:25:57.852[0m   Processing by HomeController#index as HTML (pid:13454)
+[32mINFO [0;37m2014-06-05 09:25:57.856[0m   Rendered home/index.html.erb within layouts/application (0.1ms) (pid:13454)
+[32mINFO [0;37m2014-06-05 09:25:58.289[0m   Completed 200 OK in 436ms (Views: 436.1ms) (pid:13454)

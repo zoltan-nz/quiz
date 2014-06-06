@@ -4,15 +4,6 @@ ruby '2.1.2'
 
 gem 'rails', '~> 4.1.1'
 
-gem 'sass-rails'
-gem 'uglifier'
-gem 'coffee-rails'
-
-gem 'jquery-rails'
-
-gem 'bootstrap-sass'
-gem 'font-awesome-rails'
-
 gem 'faker'
 
 gem 'bcrypt'
@@ -21,12 +12,6 @@ gem 'puma'
 
 gem 'devise', github: 'plataformatec/devise'
 gem 'cancancan'
-
-gem 'ember_devise_simple_auth'
-
-gem 'ember-rails'
-gem 'ember-source'
-gem 'es6_module_transpiler-rails'
 
 gem 'rabl'
 gem 'oj'
@@ -70,7 +55,6 @@ group :development do
   gem 'guard-zeus'
   gem 'guard-livereload'
   gem 'rack-livereload'
-
 
   gem 'rb-fsevent', require: false
   gem 'zeus'
