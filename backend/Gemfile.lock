@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mongoid/mongoid.git
-  revision: 9c0fe7f78d667b275da530c5417271a03c47e407
+  revision: 1261bc8a0989eeff0a977d12351a8e82ed1bf9a3
   specs:
     mongoid (4.0.0.rc1)
       activemodel (~> 4.0)
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: 2bde395840b9991c5f8117e1596064e3bb04b483
+  revision: eeb6060d9df0aac63d2f8cc90895941b30ba1c0f
   specs:
     devise (3.2.4)
       bcrypt (~> 3.0)
@@ -61,7 +61,7 @@ GEM
       debug_inspector (>= 0.0.1)
     bson (2.3.0)
     builder (3.2.2)
-    bullet (4.9.0)
+    bullet (4.10.0)
       activesupport
       uniform_notifier (~> 1.6.0)
     callsite (0.0.11)
@@ -156,7 +156,7 @@ GEM
       optionable (~> 0.2.0)
     multi_json (1.10.1)
     multipart-post (2.0.0)
-    oj (2.9.4)
+    oj (2.9.5)
     optionable (0.2.0)
     origin (2.1.1)
     orm_adapter (0.5.0)
@@ -225,7 +225,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.3.2)
     rb-fsevent (0.9.4)
-    rb-inotify (0.9.4)
+    rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rb-readline (0.5.1)
     require_all (1.3.2)
@@ -253,7 +253,7 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (1.2.1)
       thread_safe (~> 0.1)
-    uniform_notifier (1.6.1)
+    uniform_notifier (1.6.2)
     warden (1.2.3)
       rack (>= 1.0)
     will_paginate (3.0.5)
