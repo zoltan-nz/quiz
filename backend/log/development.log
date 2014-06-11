@@ -474,3 +474,39 @@ Completed 200 OK in 7ms (Views: 7.0ms)
 [32mINFO [0;37m2014-06-10 23:05:44.813[0m   Processing by Rails::WelcomeController#index as HTML (pid:6387)
 [32mINFO [0;37m2014-06-10 23:05:44.815[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/railties-4.1.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms) (pid:6387)
 [32mINFO [0;37m2014-06-10 23:05:44.816[0m   Completed 200 OK in 3ms (Views: 2.3ms) (pid:6387)
+[0;37mDEBUG[0;37m2014-06-11 22:01:41.359[0m    (pid:16689)
+[0;37mDEBUG[0;37m2014-06-11 22:01:41.359[0m    (pid:16689)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-11 22:01:41.360[0m   Started GET "/" for 127.0.0.1 at 2014-06-11 22:01:41 +1200 (pid:16689)
+[32mINFO [0;37m2014-06-11 22:01:41.380[0m   Processing by Rails::WelcomeController#index as HTML (pid:16689)
+[32mINFO [0;37m2014-06-11 22:01:41.391[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/railties-4.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.3ms) (pid:16689)
+[32mINFO [0;37m2014-06-11 22:01:41.394[0m   Completed 200 OK in 13ms (Views: 12.8ms) (pid:16689)
+[0;37mDEBUG[0;37m2014-06-11 22:02:29.490[0m    (pid:16753)
+[0;37mDEBUG[0;37m2014-06-11 22:02:29.491[0m    (pid:16753)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-11 22:02:29.491[0m   Started GET "/" for 127.0.0.1 at 2014-06-11 22:02:29 +1200 (pid:16753)
+[32mINFO [0;37m2014-06-11 22:02:29.512[0m   Processing by Rails::WelcomeController#index as HTML (pid:16753)
+[32mINFO [0;37m2014-06-11 22:02:29.525[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/railties-4.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.9ms) (pid:16753)
+[32mINFO [0;37m2014-06-11 22:02:29.527[0m   Completed 200 OK in 15ms (Views: 14.5ms) (pid:16753)
+[0;37mDEBUG[0;37m2014-06-11 22:03:38.315[0m    (pid:16799)
+[0;37mDEBUG[0;37m2014-06-11 22:03:38.316[0m    (pid:16799)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-11 22:03:38.316[0m   Started GET "/" for 127.0.0.1 at 2014-06-11 22:03:38 +1200 (pid:16799)
+[32mINFO [0;37m2014-06-11 22:03:38.337[0m   Processing by Rails::WelcomeController#index as HTML (pid:16799)
+[32mINFO [0;37m2014-06-11 22:03:38.348[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/railties-4.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.4ms) (pid:16799)
+[32mINFO [0;37m2014-06-11 22:03:38.350[0m   Completed 200 OK in 12ms (Views: 12.2ms) (pid:16799)
+[0;37mDEBUG[0;37m2014-06-11 22:05:20.818[0m    (pid:17142)
+[0;37mDEBUG[0;37m2014-06-11 22:05:20.830[0m    (pid:17142)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-11 22:05:20.831[0m   Started GET "/" for 127.0.0.1 at 2014-06-11 22:05:20 +1200 (pid:17142)
+[32mINFO [0;37m2014-06-11 22:05:20.894[0m   Processing by Rails::WelcomeController#index as HTML (pid:17142)
+[32mINFO [0;37m2014-06-11 22:05:20.922[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/railties-4.1.1/lib/rails/templates/rails/welcome/index.html.erb (4.2ms) (pid:17142)
+[32mINFO [0;37m2014-06-11 22:05:20.929[0m   Completed 200 OK in 33ms (Views: 32.5ms) (pid:17142)
