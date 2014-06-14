@@ -16,6 +16,7 @@
     "ember-cli-test-loader": "rjackson/ember-cli-test-loader#0.0.2",
     "ember-devise-simple-auth": "",
     "moment": "",
-    "stingjs": ""
+    "stringjs": "",
+    "ember-devise-simple-auth", ""
   }
 }

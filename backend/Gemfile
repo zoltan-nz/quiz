@@ -11,6 +11,7 @@ gem 'bcrypt'
 gem 'puma'
 
 gem 'devise', github: 'plataformatec/devise'
+gem 'ember_devise_simple_auth'
 gem 'cancancan'
 
 gem 'rabl'
