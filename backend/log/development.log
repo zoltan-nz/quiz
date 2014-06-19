@@ -519,3 +519,48 @@ Completed 200 OK in 7ms (Views: 7.0ms)
 [32mINFO [0;37m2014-06-15 22:02:12.134[0m   Processing by Rails::WelcomeController#index as HTML (pid:13495)
 [32mINFO [0;37m2014-06-15 22:02:12.150[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/railties-4.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.1ms) (pid:13495)
 [32mINFO [0;37m2014-06-15 22:02:12.153[0m   Completed 200 OK in 18ms (Views: 18.1ms) (pid:13495)
+[0;37mDEBUG[0;37m2014-06-19 23:26:05.185[0m    (pid:11826)
+[0;37mDEBUG[0;37m2014-06-19 23:26:05.186[0m    (pid:11826)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-19 23:26:05.186[0m   Started GET "/" for 127.0.0.1 at 2014-06-19 23:26:05 +1200 (pid:11826)
+[32mINFO [0;37m2014-06-19 23:26:05.220[0m   Processing by Rails::WelcomeController#index as HTML (pid:11826)
+[32mINFO [0;37m2014-06-19 23:26:05.238[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/railties-4.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.8ms) (pid:11826)
+[32mINFO [0;37m2014-06-19 23:26:05.243[0m   Completed 200 OK in 20ms (Views: 20.1ms) (pid:11826)
+[0;37mDEBUG[0;37m2014-06-19 23:26:16.810[0m    (pid:11826)
+[0;37mDEBUG[0;37m2014-06-19 23:26:16.811[0m    (pid:11826)
+
+ ======================================================================================= 
+ 
+[32mINFO [0;37m2014-06-19 23:26:16.811[0m   Started GET "/user" for 127.0.0.1 at 2014-06-19 23:26:16 +1200 (pid:11826)
+[31mFATAL[0;37m2014-06-19 23:26:16.814[0m   ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  rack-mini-profiler (0.9.1) lib/mini_profiler/profiler.rb:300:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.8.2) lib/puma/server.rb:490:in `handle_request'
+  puma (2.8.2) lib/puma/server.rb:361:in `process_client'
+  puma (2.8.2) lib/puma/server.rb:254:in `block in run'
+  puma (2.8.2) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.8.2) lib/puma/thread_pool.rb:92:in `block in spawn_thread' (pid:11826)
+[32mINFO [0;37m2014-06-19 23:26:16.828[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms) (pid:11826)
+[32mINFO [0;37m2014-06-19 23:26:16.843[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms) (pid:11826)
+[32mINFO [0;37m2014-06-19 23:26:16.858[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms) (pid:11826)
+[32mINFO [0;37m2014-06-19 23:26:16.859[0m   Rendered /Users/szines/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.5ms) (pid:11826)

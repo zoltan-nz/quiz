@@ -4,7 +4,7 @@ task :run do
   pids = [
       spawn("cd backend && EMBER_PORT=4900 spring rails s -p 3900"),
       spawn("cd frontend && ./node_modules/.bin/ember server --port=4900 --proxy-port=3900"),
-      spawn("sleep 5 && open http://localhost:3900")
+      spawn("sleep 5 && open http://localhost:4900")
   ]
 
   trap "INT" do
